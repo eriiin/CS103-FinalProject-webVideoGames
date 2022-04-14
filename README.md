@@ -5,3 +5,6 @@ Website that introduces Video Games. Final Project for CS103 at BU.
 * Home
 * Types of video games
 * credits
+
+## Template avaliable at html5up.
+https://cs-people.bu.edu/xiayu/cs103/lab7/part2/lab7-part2-problem2/index.html
