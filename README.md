@@ -3,6 +3,7 @@ Website that introduces Video Games. Final Project for CS103 at BU.
 
 # Basic Structure
 * Home
+* Introduction to video games
 * Types of video games
 * credits
 
