@@ -1,6 +1,7 @@
 # CS103-FinalProject-webVideoGames
 Website that introduces Video Games. Final Project for CS103 at BU.
-Preview at: https://eriiin.github.io/CS103-FinalProject-webVideoGames/
+### Preview at: 
+https://eriiin.github.io/CS103-FinalProject-webVideoGames/
 
 # Basic Structure
 * Home
