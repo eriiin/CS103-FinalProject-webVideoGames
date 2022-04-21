@@ -16,6 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -55,8 +56,25 @@
 					<div class="content">
 						<header>
 							<h2>World of Games</h2>
-							<p>Explore the world of video games.<br />
-							Moba. Souls. Motion Sensing.</p>
+							<p id="type-tagline">
+							</p>
+							<script>
+								new TypeIt('#type-tagline', {
+									speed: 50,
+									loop: true
+								})
+										.type("Explore the wordl of video games.", {delay: 500})
+										.move(-16, {delay: 300})
+										.delete(2, {pause: 200})
+										.type("ld", {pause: 300})
+										.move(16, {delay: 200})
+										.break()
+										.type("Moba. Soulss. Tycoon.")
+										.move(-9)
+										.delete(1)
+										.move(null, { to: 'end'})
+										.go();
+							</script>
 						</header>
 						<span class="image"><img src="images/game-icon.png" alt="" /></span>
 					</div>
@@ -119,8 +137,8 @@
 						<header>
 							<h2>Now, video games are more developed than ever.</h2>
 							<p>As of 2020, the global video game market has estimated annual revenues of US$159
-								billion across hardware, software, and services. This is three times the size
-								of the 2019 global music industry and four times that of the 2019 film industry.</p>
+								billion. This is three times the size of the 2019 global music industry and
+								four times that of the 2019 film industry.</p>
 						</header>
 						<p>Explore the History of video games.</p>
 						<ul class="actions">
@@ -135,8 +153,8 @@
 					<span class="image fit main"><img src="images/eldenring-ranni.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Souls is a series of action role-playing games.</h2>
-							<p>The series began with the release of Demon's Souls for the PlayStation 3 in 2009.
+							<h2>Souls is a series of action RPGs.</h2>
+							<p>The series began with Demon's Souls for the PlayStation 3 in 2009.
 								Elden Ring, released in Feb 2022, is the recent most successful video game and
 								the first ever souls game developed with open world mechanism.</p>
 						</header>
@@ -153,7 +171,7 @@
 				<span class="image fit main bottom"><img src="images/lol-4heros.jpg" alt="" /></span>
 				<div class="content">
 					<header>
-						<h2>Multiplayer online battle arena (MOBA) is a subgenre of strategy video games.</h2>
+						<h2>Multiplayer online battle arena (MOBA) is a subgenre of strategy games.</h2>
 						<p>...in which two teams of players compete against each other on a predefined battlefield.
 							Each player controls a single character with a set of distinctive abilities that
 							improve over the course of a game to achieve victory.</p>
