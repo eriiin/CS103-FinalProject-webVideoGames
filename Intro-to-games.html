@@ -16,6 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src=“https://unpkg.com/scrollreveal”></script>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -62,13 +63,13 @@
 						<!-- Content -->
 							<section id="content">
 								<a href="#" class="image fit"><img src="images/spacewar.jpg" alt="" /></a>
-								<h3>The first consumer video game hardware</h3>
-								<p>The first consumer video game hardware was released in the early 1970s. The first
+								<h3 class="scroll-reveal">The first consumer video game hardware</h3>
+								<p class="scroll-reveal">The first consumer video game hardware was released in the early 1970s. The first
 									home video game console is the Magnavox Odyssey, and the first arcade video games
 									are Computer Space and Pong. After its home console conversions, numerous companies
 									sprang up to capture Pong's success in both the arcade and the home by cloning the
 									game, causing series of boom and bust cycles due to oversaturation and lack of innovation.</p>
-								<p>Early video games use interactive electronic devices with various display formats.
+								<p class="scroll-reveal">Early video games use interactive electronic devices with various display formats.
 									The earliest example is from 1947—a "Cathode-ray tube amusement device" was filed
 									for a patent on 25 January 1947, by Thomas T. Goldsmith Jr. and Estle Ray Mann,
 									and issued on 14 December 1948, as U.S. Patent 2455992. Inspired by radar display
@@ -114,6 +115,10 @@
 				</footer>
 
 		</div>
+		<script>ScrollReveal({duration: 500,
+			delay: 100,
+			reset: true}).reveal(".scroll-reveal");
+		</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
