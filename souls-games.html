@@ -22,23 +22,6 @@
 			reset: true});
 		</script>
 
-		<script>
-			function doSwap(id){
-				alert('click triggered')
-				let main_img, target_img;
-
-				main_img = document.getElementById('main-image').getAttribute("src");
-				target_img = document.getElementById(id).getAttribute("src");
-
-				console.log(main_img, target_img)
-
-				document.getElementById('main-image').src = target_img;
-				document.getElementById(id).src = main_img;
-
-				alert("image swapped")
-			}
-		</script>
-
 
 	</head>
 	<body class="is-preload">
@@ -84,7 +67,8 @@
 
 						<!-- Content -->
 							<section id="content">
-								<a href="#" class="image fit reveal"><img src="images/eldenring-maleniacrop1.png" alt="Malenia" /></a>
+<!--								<img style="border-radius: 5px;" src="images/eldenring-maleniacrop1.png" alt="Malenia" />-->
+								<div class="col-12"><span class="image fit"><img src="images/eldenring-maleniacrop1.png" alt="Malenia" /></span></div>
 								<h2 style="text-align: center;"><b>The Souls Series</b></h2>
 
 <!--								<div>-->
@@ -234,7 +218,7 @@
 									<section class="cd-section">
 										<!-- section content here -->
 										<h4 style="text-align: left;"><b>Sekiro: Shadows Die Twice</b></h4>
-										<p class="reveal"><span class="image left reveal"><img src="images/sekiro-s.png" alt="" /></span>
+										<p style="text-align: left;"><span class="image left reveal"><img src="images/sekiro-s.png" alt="" /></span>
 											<a href="https://www.sekirothegame.com/content/atvi/sekiro/web/en/home.html">
 											<i>Sekiro: Shadows Die Twice</i></a> is a 2019 action-adventure game developed by FromSoftware
 											and published by Activision. The game follows a shinobi known as Wolf as he attempts
@@ -271,8 +255,8 @@
 								<div class="reveal">
 									<section class="cd-section">
 										<!-- section content here -->
-										<h4 style="text-align: left;"><b>Elden Ring</b></h4>
-										<p style="text-align: left;"><span class="image left reveal"><img src="images/elden-ring.png" alt="" /></span>
+										<h4 style="text-align: right;"><b>Elden Ring</b></h4>
+										<p style="text-align: right;"><span class="image right reveal"><img src="images/elden-ring.png" alt="" /></span>
 											<a href="https://www.sekirothegame.com/content/atvi/sekiro/web/en/home.html">
 												<i>Elden Ring</i></a> is an open world action role-playing game developed by
 											FromSoftware and published by Bandai Namco Entertainment. The game was directed by
@@ -308,31 +292,25 @@
 								<hr />
 								<h2 style="text-align: center;"><b>Gallery</b></h2>
 
-<!--								<script>-->
-<!--									function doSwap(id){-->
-<!--										let main_img, target_img;-->
 
-<!--										main_img = document.getElementById('main-image').getAttribute("src");-->
-<!--										target_img = document.getElementById(id).getAttribute("src");-->
-
-<!--										console.log(main_img, target_img)-->
-
-<!--										document.getElementById('main-image').src = target_img;-->
-<!--										document.getElementById(id).src = main_img;-->
-
-<!--										console.log("image swapped")-->
-<!--									}-->
-<!--								</script>-->
 
 								<div class="box alt">
 									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img id='main-image' src="images/sekiro.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img1' src="images/eldenring-marika.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img2' src="images/eldenring-blackblade.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img3' src="images/eldenring-frenziedflame.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img4' src="images/eldenring-radagon.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img5' src="images/eldenring-ranni.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img6' src="images/eldenring-malenia.jpeg" alt="" onclick="doSwap(this.id)"/></span></div>
+										<div class="col-12 reveal"><span class="image fit" onclick="window.open(getElementById('main-image').src)">
+											<img id='main-image' src="images/sekiro.jpg" alt="" />
+										</span></div>
+										<div class="col-4 col-6-xsmall reveal"><span class="image fit" onclick="doSwap('img1')">
+											<img id='img1' src="images/eldenring-marika.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall reveal"><span class="image fit" onclick="doSwap('img2')">
+											<img id='img2' src="images/eldenring-blackblade.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall reveal"><span class="image fit" onclick="doSwap('img3')">
+											<img id='img3' src="images/eldenring-frenziedflame.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall reveal"><span class="image fit" onclick="doSwap('img4')">
+											<img id='img4' src="images/eldenring-radagon.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall reveal"><span class="image fit" onclick="doSwap('img5')">
+											<img id='img5' src="images/eldenring-ranni2.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall reveal"><span class="image fit" onclick="doSwap('img6')">
+											<img id='img6' src="images/eldenring-ageofthestars.jpg" alt="" /></span></div>
 <!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>-->
 <!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>-->
 <!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>-->
@@ -341,6 +319,26 @@
 <!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>-->
 									</div>
 								</div>
+
+								<script>
+									function doSwap(id){
+										let main_img, target_img;
+
+										main_img = document.getElementById('main-image').src;
+										target_img = document.getElementById(id).src;
+
+										console.log(main_img, target_img)
+
+										document.getElementById('main-image').src = target_img;
+										document.getElementById(id).src = main_img;
+
+										console.log("image swapped")
+									}
+
+									// function openImg(){
+									// 	window.open(document.getElementById('main-image').src);
+									// }
+								</script>
 
 
 
