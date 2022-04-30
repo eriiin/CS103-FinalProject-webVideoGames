@@ -22,6 +22,23 @@
 			reset: true});
 		</script>
 
+		<script>
+			function doSwap(id){
+				alert('click triggered')
+				let main_img, target_img;
+
+				main_img = document.getElementById('main-image').getAttribute("src");
+				target_img = document.getElementById(id).getAttribute("src");
+
+				console.log(main_img, target_img)
+
+				document.getElementById('main-image').src = target_img;
+				document.getElementById(id).src = main_img;
+
+				alert("image swapped")
+			}
+		</script>
+
 
 	</head>
 	<body class="is-preload">
@@ -68,7 +85,7 @@
 						<!-- Content -->
 							<section id="content">
 								<a href="#" class="image fit reveal"><img src="images/eldenring-maleniacrop1.png" alt="Malenia" /></a>
-								<h3 style="text-align: center;"><b>The Souls Series</b></h3>
+								<h2 style="text-align: center;"><b>The Souls Series</b></h2>
 
 <!--								<div>-->
 <!--								<h4 class="reveal"><b>Demon's Souls</b></h4>-->
@@ -79,7 +96,7 @@
 <!--									February 2009. The game is referred to as a spiritual-->
 <!--									successor to FromSoftware's King's Field series</p>-->
 
-									<div id="main_content" class="reveal">
+									<div class="reveal">
 										<section class="cd-section">
 											<!-- section content here -->
 											<h4 style="text-align: left;"><b>Demon's Souls</b></h4>
@@ -93,7 +110,7 @@
 											<blockquote>"You have a heart of gold, don't let them take it from ye."</blockquote>
 
 											<div class="cd-modal-action">
-												<a href="#0" class="btn" data-type="modal-trigger">About</a>
+												<a href="#0" class="btn" data-type="modal-trigger">More Info</a>
 												<span class="cd-modal-bg"></span>
 											</div>
 
@@ -135,46 +152,197 @@
 
 								<hr />
 
-								<div>
-								<h4 class="reveal">Dark Souls</h4>
-								<p class="reveal"><span class="image right reveal"><img src="images/dark-souls.png" alt="" /></span>
-									The <i>Souls Series</i> take place within a dark, medieval fantasy setting, where
-									the player's character fights against knights, dragons, phantoms, demons, and other
-									monstrous or supernatural entities. The accretion, loss, and recovery of souls is
-									central to the narrative and gameplay of Souls games. Another recurring motif is
-									that of a once powerful and prosperous kingdom which has fallen into ruin.</p>
+<!--								<div>-->
+<!--								<h4 class="reveal">Dark Souls</h4>-->
+<!--								<p class="reveal"><span class="image right reveal"><img src="images/dark-souls.png" alt="" /></span>-->
+<!--									The <i>Souls Series</i> take place within a dark, medieval fantasy setting, where-->
+<!--									the player's character fights against knights, dragons, phantoms, demons, and other-->
+<!--									monstrous or supernatural entities. The accretion, loss, and recovery of souls is-->
+<!--									central to the narrative and gameplay of Souls games. Another recurring motif is-->
+<!--									that of a once powerful and prosperous kingdom which has fallen into ruin.</p>-->
 
-								<p class="reveal">The plot of the <a href="https://www.darksouls.jp/"><i>Dark Souls trilogy</i></a>
-									differs in that it revolves around the
-									player's attempts, through various means, to either reverse or perpetuate the spread
-									of a curse of undeath known as the "Darksign" - which prevents true death but
-									prompts the undead's gradual descent into a madness and decay called "Hollowing" -
-									based on the player's decisions. These games are linked through their setting and
-									an overarching cyclic narrative centering around fire, and are linked to their
-									predecessor Demon's Souls through common themes and elements, including
-									interactions with phantoms and battles with demons.</p></div>
+<!--								<p class="reveal">The plot of the <a href="https://www.darksouls.jp/"><i>Dark Souls trilogy</i></a>-->
+<!--									differs in that it revolves around the-->
+<!--									player's attempts, through various means, to either reverse or perpetuate the spread-->
+<!--									of a curse of undeath known as the "Darksign" - which prevents true death but-->
+<!--									prompts the undead's gradual descent into a madness and decay called "Hollowing" - -->
+<!--									based on the player's decisions. These games are linked through their setting and-->
+<!--									an overarching cyclic narrative centering around fire, and are linked to their-->
+<!--									predecessor Demon's Souls through common themes and elements, including-->
+<!--									interactions with phantoms and battles with demons.</p></div>-->
 
-								<hr />
+								<div class="reveal">
+									<section class="cd-section">
+										<!-- section content here -->
+										<h4 style="text-align: right;"><b>Dark Souls</b></h4>
+										<p style="text-align: right;"><span class="image right reveal"><img src="images/dark-souls.png" alt="" /></span>
+											The <i>Souls Series</i> take place within a dark, medieval fantasy setting, where
+											the player's character fights against knights, dragons, phantoms, demons, and other
+											monstrous or supernatural entities.</p>
 
-								<div>
-								<h4 class="reveal">Sekiro: Shadows Die Twice</h4>
-								<p class="reveal"><span class="image left reveal"><img src="images/sekiro-s.png" alt="" /></span>
-									<a href="https://www.sekirothegame.com/content/atvi/sekiro/web/en/home.html">
-									<i>Sekiro: Shadows Die Twice</i></a> is a 2019 action-adventure game developed by FromSoftware
-									and published by Activision. The game follows a shinobi known as Wolf as he attempts
-									to take revenge on a samurai clan who attacked him and kidnapped his lord.</p>
+										<blockquote>"So Lonestar, now you see that evil will always triumph, because good is dumb."</blockquote>
 
-								<p class="reveal">Largely different from the other souls, Sekiro's gameplay is focused on stealth,
-									exploration, and combat, with a particular emphasis on boss battles. The game
-									takes place in a fictionalized Japan during the Sengoku period and makes strong
-									references to Buddhist mythology and philosophy. While making the game, lead director
-									Hidetaka Miyazaki wanted to create a new intellectual property (IP) that marked a
-									departure from the Souls series of games also made by FromSoftware. The developers
-									looked to games such as The Mysterious Murasame Castle and the Tenchu series for
-									inspiration.</p>
+										<div class="cd-modal-action">
+											<a href="#0" class="btn" data-type="modal-trigger">More Info</a>
+											<span class="cd-modal-bg"></span>
+										</div>
+
+										<div class="cd-modal">
+											<div class="cd-modal-content">
+												<!-- modal content here -->
+												<p>The accretion, loss, and recovery of souls is
+													central to the narrative and gameplay of Souls games. Another recurring motif is
+													that of a once powerful and prosperous kingdom which has fallen into ruin.</p>
+
+												<p>The plot of the <a href="https://www.darksouls.jp/"><i>Dark Souls trilogy</i></a>
+													differs in that it revolves around the
+													player's attempts, through various means, to either reverse or perpetuate the spread
+													of a curse of undeath known as the "Darksign" - which prevents true death but
+													prompts the undead's gradual descent into a madness and decay called "Hollowing" -
+													based on the player's decisions. These games are linked through their setting and
+													an overarching cyclic narrative centering around fire, and are linked to their
+													predecessor Demon's Souls through common themes and elements, including
+													interactions with phantoms and battles with demons.</p>
+											</div>
+										</div>
+
+										<a href="#0" class="cd-modal-close">Close</a>
+									</section>
 								</div>
 
 								<hr />
+
+<!--								<div>-->
+<!--								<h4 class="reveal">Sekiro: Shadows Die Twice</h4>-->
+<!--								<p class="reveal"><span class="image left reveal"><img src="images/sekiro-s.png" alt="" /></span>-->
+<!--									<a href="https://www.sekirothegame.com/content/atvi/sekiro/web/en/home.html">-->
+<!--									<i>Sekiro: Shadows Die Twice</i></a> is a 2019 action-adventure game developed by FromSoftware-->
+<!--									and published by Activision. The game follows a shinobi known as Wolf as he attempts-->
+<!--									to take revenge on a samurai clan who attacked him and kidnapped his lord.</p>-->
+
+<!--								<p class="reveal">Largely different from the other souls, Sekiro's gameplay is focused on stealth,-->
+<!--									exploration, and combat, with a particular emphasis on boss battles. The game-->
+<!--									takes place in a fictionalized Japan during the Sengoku period and makes strong-->
+<!--									references to Buddhist mythology and philosophy. While making the game, lead director-->
+<!--									Hidetaka Miyazaki wanted to create a new intellectual property (IP) that marked a-->
+<!--									departure from the Souls series of games also made by FromSoftware. The developers-->
+<!--									looked to games such as The Mysterious Murasame Castle and the Tenchu series for-->
+<!--									inspiration.</p>-->
+<!--								</div>-->
+
+								<div class="reveal">
+									<section class="cd-section">
+										<!-- section content here -->
+										<h4 style="text-align: left;"><b>Sekiro: Shadows Die Twice</b></h4>
+										<p class="reveal"><span class="image left reveal"><img src="images/sekiro-s.png" alt="" /></span>
+											<a href="https://www.sekirothegame.com/content/atvi/sekiro/web/en/home.html">
+											<i>Sekiro: Shadows Die Twice</i></a> is a 2019 action-adventure game developed by FromSoftware
+											and published by Activision. The game follows a shinobi known as Wolf as he attempts
+											to take revenge on a samurai clan who attacked him and kidnapped his lord.</p>
+
+										<blockquote>"Hesitation Is Defeat."</blockquote>
+
+										<div class="cd-modal-action">
+											<a href="#0" class="btn" data-type="modal-trigger">More Info</a>
+											<span class="cd-modal-bg"></span>
+										</div>
+
+										<div class="cd-modal">
+											<div class="cd-modal-content">
+												<!-- modal content here -->
+												<p>Largely different from the other souls, Sekiro's gameplay is focused on stealth,
+													exploration, and combat, with a particular emphasis on boss battles. The game
+													takes place in a fictionalized Japan during the Sengoku period and makes strong
+													references to Buddhist mythology and philosophy. While making the game, lead director
+													Hidetaka Miyazaki wanted to create a new intellectual property (IP) that marked a
+													departure from the Souls series of games also made by FromSoftware. The developers
+													looked to games such as The Mysterious Murasame Castle and the Tenchu series for
+													inspiration.</p>
+											</div>
+										</div>
+
+										<a href="#0" class="cd-modal-close">Close</a>
+									</section>
+								</div>
+
+								<hr />
+								<h2 style="text-align: center;"><b>The Open World</b></h2>
+
+								<div class="reveal">
+									<section class="cd-section">
+										<!-- section content here -->
+										<h4 style="text-align: left;"><b>Elden Ring</b></h4>
+										<p style="text-align: left;"><span class="image left reveal"><img src="images/elden-ring.png" alt="" /></span>
+											<a href="https://www.sekirothegame.com/content/atvi/sekiro/web/en/home.html">
+												<i>Elden Ring</i></a> is an open world action role-playing game developed by
+											FromSoftware and published by Bandai Namco Entertainment. The game was directed by
+											Hidetaka Miyazaki and made in collaboration with fantasy novelist George R. R. Martin,
+											who provided material for the game's setting.</p>
+
+										<blockquote>"Feel Free To Go Off And Die In A Ditch Somewhere."</blockquote>
+
+										<div class="cd-modal-action">
+											<a href="#0" class="btn" data-type="modal-trigger">More Info</a>
+											<span class="cd-modal-bg"></span>
+										</div>
+
+										<div class="cd-modal">
+											<div class="cd-modal-content">
+												<!-- modal content here -->
+												<p>Elden Ring takes place in the Lands Between, sometime after the destruction
+													of the titular Elden Ring and the scattering of its shards, the Great Runes.
+													Once graced by the Ring and the Erdtree which symbolizes its presence, the
+													realm is now ruled over by the demigod offspring of Queen Marika the Eternal,
+													each possessing a shard of the Ring that corrupts and taints them with power.
+													As Tarnished — exiles from the Lands Between who lost the Ring's grace and
+													are summoned back after the Shattering — players must traverse the realm
+													to ultimately find all the Great Runes, restore the Elden Ring, and
+													become the Elden Lord.</p>
+											</div>
+										</div>
+
+										<a href="#0" class="cd-modal-close">Close</a>
+									</section>
+								</div>
+
+								<hr />
+								<h2 style="text-align: center;"><b>Gallery</b></h2>
+
+<!--								<script>-->
+<!--									function doSwap(id){-->
+<!--										let main_img, target_img;-->
+
+<!--										main_img = document.getElementById('main-image').getAttribute("src");-->
+<!--										target_img = document.getElementById(id).getAttribute("src");-->
+
+<!--										console.log(main_img, target_img)-->
+
+<!--										document.getElementById('main-image').src = target_img;-->
+<!--										document.getElementById(id).src = main_img;-->
+
+<!--										console.log("image swapped")-->
+<!--									}-->
+<!--								</script>-->
+
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img id='main-image' src="images/sekiro.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img1' src="images/eldenring-marika.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img2' src="images/eldenring-blackblade.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img3' src="images/eldenring-frenziedflame.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img4' src="images/eldenring-radagon.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img5' src="images/eldenring-ranni.jpg" alt="" onclick="doSwap(this.id)"/></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img id='img6' src="images/eldenring-malenia.jpeg" alt="" onclick="doSwap(this.id)"/></span></div>
+<!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>-->
+<!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>-->
+<!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>-->
+<!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>-->
+<!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>-->
+<!--										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>-->
+									</div>
+								</div>
+
+
 
 <!--								<ul>-->
 <!--									<li>Faucibus orci lobortis ac adipiscing integer.</li>-->
