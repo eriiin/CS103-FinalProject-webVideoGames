@@ -1,3 +1,4 @@
+Sitemap: https://cs-people.bu.edu/xiayu/cs103/final/sitemap.xml
 
 User-agent: Applebot
 Allow: /
@@ -6,9 +7,6 @@ User-agent: bingbot
 Allow: /
 
 User-agent: Googlebot
-Allow: /
-
-User-agent: Baiduspider
 Allow: /
 
 User-agent: *
