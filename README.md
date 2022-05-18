@@ -12,3 +12,5 @@ https://eriiin.github.io/CS103-FinalProject-webVideoGames/
 ## Template avaliable at html5up
 * see README.txt
 * https://cs-people.bu.edu/xiayu/cs103/lab7/part2/lab7-part2-problem2/index.html
+
+~ Bug exist from ScrollReveal package or template. Require refresh to work. ~
